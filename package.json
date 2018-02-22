@@ -9,7 +9,7 @@
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
-    "generateDocs": "tsc --module amd --outFile bitski.js src/index.ts; documentation build bitski.js --config docs/documentation.yml -g -t node_modules/bitski-documentation-theme -o docs -f html; rm bitski.js"
+    "generateDocs": "tsc src/*; documentation build src/*.js --config docs/documentation.yml -o docs/index.md -f md"
   },
   "dependencies": {
     "babel-core": "^6.26.0",

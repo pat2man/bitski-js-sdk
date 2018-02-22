@@ -30,7 +30,7 @@ var config = {
   entry: __dirname + '/src/index.ts',
   externals: {
     'oidc-client': 'Oidc',
-    'web3-providers-http': 'web3-providers-http'
+    'web3': 'web3'
   },
   module: {
     loaders: [{
@@ -45,7 +45,7 @@ var config = {
     libraryTarget: 'umd'
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts']
   }
 };
 
